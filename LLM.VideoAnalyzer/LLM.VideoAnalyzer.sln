@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35309.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoAnalyzer", "VideoAnalyzer\VideoAnalyzer.csproj", "{1F732D59-186A-48FB-A6F8-E034A902F932}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{BB92F2EF-B8D4-48B1-9CDC-4577C5726B8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{4B5D31A1-EAB1-4FEC-A88C-43B6FE337CB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoAnalyzerApp", "VideoAnalyzerApp\VideoAnalyzerApp.csproj", "{DB320F07-6A63-4202-AE07-701435DC2066}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F732D59-186A-48FB-A6F8-E034A902F932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F732D59-186A-48FB-A6F8-E034A902F932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F732D59-186A-48FB-A6F8-E034A902F932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F732D59-186A-48FB-A6F8-E034A902F932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB320F07-6A63-4202-AE07-701435DC2066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB320F07-6A63-4202-AE07-701435DC2066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB320F07-6A63-4202-AE07-701435DC2066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB320F07-6A63-4202-AE07-701435DC2066}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F732D59-186A-48FB-A6F8-E034A902F932} = {BB92F2EF-B8D4-48B1-9CDC-4577C5726B8F}
+		{DB320F07-6A63-4202-AE07-701435DC2066} = {4B5D31A1-EAB1-4FEC-A88C-43B6FE337CB8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27C7E5E4-4F85-4AB9-B43D-67BB30055E64}
+	EndGlobalSection
+EndGlobal
