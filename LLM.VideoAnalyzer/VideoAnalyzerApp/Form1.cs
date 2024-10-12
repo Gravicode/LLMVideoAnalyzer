@@ -14,7 +14,7 @@ namespace VideoAnalyzerApp
             InitializeComponent();
             Setup();
         }
-
+       
         void Setup()
         {
             this.videoCapture = new VideoAnalyzer.VideoFrameCapture();
@@ -41,6 +41,13 @@ namespace VideoAnalyzerApp
 
             TxtVideoPath.Text = "http://pendelcam.kip.uni-heidelberg.de/mjpg/video.mjpg";
             TxtVideoPath2.Text = "http://pendelcam.kip.uni-heidelberg.de/mjpg/video.mjpg";
+            BtnSamplePrompt.Click += (a, b) => {
+              TxtDescribeVideo.Text = @"You are an expert in evaluating car damage from car accidents for auto insurance reporting. 
+    Create an incident report for the accident shown in the video with 3 sections. 
+    - Section 1 will include the car details (license plate, car make, car model, approximate model year, color, mileage).
+    - Section 2 list the car damage, per damage in a list.
+    - Section 3 will only include exactly 6 sentence description of the car damage.";
+    };
             BtnBrowseTargetFolder.Click += (a, b) =>
             {
                 using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
@@ -262,6 +269,7 @@ namespace VideoAnalyzerApp
             BtnStopVideo.Enabled = State;
             BtnStopVideo.Enabled = State;
             BtnProcess2.Enabled = State;
+            BtnSamplePrompt.Enabled = State;
 
         }
 

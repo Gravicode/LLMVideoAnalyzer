@@ -30,6 +30,7 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            BtnProcess2 = new Button();
             BtnClearLog = new Button();
             groupBox6 = new GroupBox();
             TxtLogs = new RichTextBox();
@@ -67,7 +68,7 @@
             TxtVideoPath2 = new TextBox();
             statusStrip1 = new StatusStrip();
             StatusLbl = new ToolStripStatusLabel();
-            BtnProcess2 = new Button();
+            BtnSamplePrompt = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox6.SuspendLayout();
@@ -107,6 +108,15 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Video Analyzer";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // BtnProcess2
+            // 
+            BtnProcess2.Location = new Point(332, 282);
+            BtnProcess2.Name = "BtnProcess2";
+            BtnProcess2.Size = new Size(171, 23);
+            BtnProcess2.TabIndex = 8;
+            BtnProcess2.Text = "&Analyze Video From Frames";
+            BtnProcess2.UseVisualStyleBackColor = true;
             // 
             // BtnClearLog
             // 
@@ -173,6 +183,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(BtnSamplePrompt);
             groupBox2.Controls.Add(CmbLLM);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(TxtDescribeVideo);
@@ -454,14 +465,14 @@
             StatusLbl.Size = new Size(176, 17);
             StatusLbl.Text = "Welcome to Video Analyzer v0.1";
             // 
-            // BtnProcess2
+            // BtnSamplePrompt
             // 
-            BtnProcess2.Location = new Point(332, 282);
-            BtnProcess2.Name = "BtnProcess2";
-            BtnProcess2.Size = new Size(171, 23);
-            BtnProcess2.TabIndex = 8;
-            BtnProcess2.Text = "&Analyze Video From Frames";
-            BtnProcess2.UseVisualStyleBackColor = true;
+            BtnSamplePrompt.Location = new Point(326, 154);
+            BtnSamplePrompt.Name = "BtnSamplePrompt";
+            BtnSamplePrompt.Size = new Size(171, 23);
+            BtnSamplePrompt.TabIndex = 9;
+            BtnSamplePrompt.Text = "&Sample Insurance Prompt";
+            BtnSamplePrompt.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -534,5 +545,6 @@
         private Button BtnStopVideo;
         private Button BtnStopVideo2;
         private Button BtnProcess2;
+        private Button BtnSamplePrompt;
     }
 }
